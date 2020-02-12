@@ -27,9 +27,5 @@ Console.log(“no”);
 //여기서 && = and l l = or
 ```
 
----
-오늘의 코드
-<https://youtu.be/S4BN1tZmmWw>
-
 
 
