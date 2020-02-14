@@ -1,4 +1,3 @@
-## 제어 대상 찾기 
 ### getElementsByTagName
 ```javascript
   var lis = document.getElementsByTagName('li')
