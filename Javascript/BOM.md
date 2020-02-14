@@ -45,9 +45,9 @@ function winmessage(msg){
 win.document.getElementById('message').innerText=msg;}
 </body>
 //window,open 메소드는 데모.html을 파일을 담고 있는 새로운 창의 객체가 window.open 리턴값으로 저장되고 
-win 이라는 변수에 담은거임.win 객체에서 id값 메세지를 찾아서 그걸 msg값으로 바꿔준다. 여기서 msg 인자는 this.value값!(=입력값)
-그래서 id message에 hi라고 써뒀는데 이걸 hello로 바꾸면 id값이 달라진다는겨!
+//win 이라는 변수에 담은거임.win 객체에서 id값 메세지를 찾아서 그걸 msg값으로 바꿔준다. 여기서 msg 인자는 this.value값!(=입력값)
+//그래서 id message에 hi라고 써뒀는데 이걸 hello로 바꾸면 id값이 달라진다는겨!
 ```
 [참조1]:(https://youtu.be/30PU5GYCb4A)
 
-**생활코딩 강의 내용을 정리한 것입니다**
+**위 내용은 생활코딩 강의 내용을 정리한 것입니다**
