@@ -8,7 +8,7 @@
 - alert : 사용자에게 정보를 제공, 혹은 디버깅(경고창이 실행되는 동안 다음 로직 실행이 안됨)
 
 ```javascript
-<input type=“button” value=“alert” onclick=“alertfunc();”/>
+<input type=“button” value=“alert” onclick = “alertfunc();”/>
 sunction alertfnc(){
 alert(1);
 aler(2);
@@ -40,9 +40,9 @@ aler(‘fail’);
 <body>
 	<input type="text" onkeypress="winmessage"(this.value">
 function winopen(){
-win = window.open('demo.html','ot','width=300px')}
+win = window.open('demo.html','ot','width = 300px')}
 function winmessage(msg){
-win.document.getElementById('message').innerText=msg;}
+win.document.getElementById('message').innerText = msg;}
 </body>
 //window,open 메소드는 데모.html을 파일을 담고 있는 새로운 창의 객체가 window.open 리턴값으로 저장되고 
 //win 이라는 변수에 담은거임.win 객체에서 id값 메세지를 찾아서 그걸 msg값으로 바꿔준다. 여기서 msg 인자는 this.value값!(=입력값)
