@@ -6,7 +6,7 @@
 
 
 ### 1.식별자 API
-- Element.tagName : 현재 이 엘리먼트의 태그 네임을 찾아주는 **읽기 전용** 프로퍼티<br>
+- `Element.tagName` : 현재 이 엘리먼트의 태그 네임을 찾아주는 **읽기 전용** 프로퍼티<br>
 (**태그넴을 바꿔주진 못함**)
 
 ```javascript
@@ -20,7 +20,7 @@
 </script>
 ```
 
-- Element.id : Element.tagName와 다르게 id값을 바꿔줄 수 있음
+- `Element.id` : Element.tagName와 다르게 id값을 바꿔줄 수 있음
 
 ```javascript
 <ul>
@@ -36,7 +36,7 @@
 </script>
 ```
 
-- Element.classList<br>
+- `Element.classList`<br>
 className 불편한 점:추가하려면 기존 유무를 먼저 확인해야하고<br>
 삭제하려면 삭제하지 않을 것을 className으로 재지정함. 그래서 필요한게 classList<br>
 
@@ -61,7 +61,7 @@ var active = document.getElementById('active')
 ```
 ---
 ### 2.조회 API:조회 대상을 제한하는 방법에 대하여
-document.getElmentsBy*와 Element.getElmentsBy*차이 <br>
+`document.getElmentsBy*`와 `Element.getElmentsBy*`차이 <br>
 문서 전체의 내용 중에서 찾게 되고 , 찾은 엘리먼트의 하위 엘리먼트만 찾게 됨. 아래 예시 ㄱ
 
  ```javascript
