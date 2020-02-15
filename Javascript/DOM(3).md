@@ -53,6 +53,7 @@ var active = document.getElementById('active')
     for(var i = 0; i < active.classList.length; i++){
         condole.log(active.classList[i]);
     } // active.classlist 열거~
+    
     active.classList.add('am'); //classList에 class 추가 방법은? add 메소드 활용
     active.classList.remove('am'); //classList에 제거 방법은? add 메소드 활용
     active.classList.toggle('am'); // 실행할 때마다 넣었다 뺐다 하려면?(온오프버튼)
@@ -97,10 +98,9 @@ console.groupEnd();
 ```
 ---
 ### 3.속성 API:태그의 이름(<a>)만으로 정보가 부족할 때<br>
-    id href와 같은 속성(attribute)을 통해서 부가 정보를 제시
-    
-    ```javascript
+    id href와 같은 속성(attribute)을 통해서 부가 정보를 제시<br>
     <a id="target" href="제어대상을찾기(1).html">제어 대상</a>
+    ```javascript
     <script>
         // 속성값 가져오기
     var t = document.getElementById('target') //제어 대상이라는 a 태그를 변수에 담
