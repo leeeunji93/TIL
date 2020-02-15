@@ -2,12 +2,12 @@
 > 엘리먼트(각각의 태그들)를 추상화한 객체
 > Element > HTMLElement > HTML(TagName)Element
 > Element 객체 HTMLElement 객체를 구분하는 이유?<br>
-> DOM이 꼭 HTML만을 프로그래밍적으로 제어하는 규격이 아니기 때문에!
----
+> DOM이 꼭 HTML만을 프로그래밍적으로 제어하는 규격이 아니기 때문.
+
 
 ### 1.식별자 API
-- Element.tagName : 햔재 이 엘리먼트의 태그 네임을 찾아주는 **읽기 전용** 프로퍼티
-**태그넴을 바꿔주진 못함**
+- Element.tagName : 현재 이 엘리먼트의 태그 네임을 찾아주는 **읽기 전용** 프로퍼티<br>
+(**태그넴을 바꿔주진 못함**)
 ```javascript
 <ul>
     <li>html</li>
@@ -19,8 +19,7 @@
 </script>
 ```
 
-- Element.id
-Element.tagName와 다르게 id값을 바꿔줄 수 있
+- Element.id : Element.tagName와 다르게 id값을 바꿔줄 수 있음
 ```javascript
 <ul>
     <li>html</li>
@@ -35,7 +34,7 @@ Element.tagName와 다르게 id값을 바꿔줄 수 있
 </script>
 ```
 
-- Element.classList
+- Element.classList<br>
 className 불편한 점:추가하려면 기존 유무를 먼저 확인해야하고<br>
 삭제하려면 삭제하지 않을 것을 className으로 재지정함. 그래서 필요한게 classList<br>
 ```javascript
