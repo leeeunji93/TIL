@@ -64,7 +64,7 @@ var active = document.getElementById('active')
 document.getElmentsBy*와 Element.getElmentsBy*차이 <br>
 문서 전체의 내용 중에서 찾게 되고 , 찾은 엘리먼트의 하위 엘리먼트만 찾게 됨. 아래 예시 ㄱ
 
-```javascript
+ ```javascript
 <ul>
     <li class="marked">html</li>
     <li>css</li>
@@ -95,7 +95,7 @@ console.log(list[i].textContent);
 console.groupEnd();
 > dom bom만 찾음
 </script>
-```
+ ```
 ---
 ### 3.속성 API:태그의 이름(<a>)만으로 정보가 부족할 때<br>
     id href와 같은 속성(attribute)을 통해서 부가 정보를 제시<br>
