@@ -5,7 +5,7 @@
 > 웹 브라우저를 제어하기 위해 브라우저에서 제공하는 객체들<br>
 
 ### 사용자와 커뮤니케이션
-- alert : 사용자에게 정보를 제공, 혹은 디버깅(경고창이 실행되는 동안 다음 로직 실행이 안됨)
+- `alert` : 사용자에게 정보를 제공, 혹은 디버깅(경고창이 실행되는 동안 다음 로직 실행이 안됨)
 
 ```javascript
 <input type=“button” value=“alert” onclick = “alertfunc();”/>
@@ -15,8 +15,8 @@ aler(2);
 }
 // alertfnc 함수 실행해라~ 버튼을 눌렀을때 경고창이 뜨고 그 안의 메세지는 (1)이 뜨는거임 이동안 2로 넘어가지 않음 
 ```
-- confirm : alert과 다르게 확인과 취소 버튼이 있음.확인 누르면 true 취소 누르면 false<br>
-- prompt : 사용자가 입력한 값을 자스가 받아내는 것.prompt(‘id’); 창에 id값 넣기 가능
+- `confirm` : alert과 다르게 확인과 취소 버튼이 있음.확인 누르면 true 취소 누르면 false<br>
+- `prompt` : 사용자가 입력한 값을 자스가 받아내는 것.prompt(‘id’); 창에 id값 넣기 가능
 ```javascript
  function a(){
 if(prompt(‘id’)===‘zoe’){
@@ -35,7 +35,7 @@ aler(‘fail’);
   + location.reload(); <홈페이지 리로드 
 ---
 ### 창 제어
-- window.open 메소드
+- `window.open` 메소드
 ```javascript
 <body>
 	<input type="text" onkeypress="winmessage"(this.value">
