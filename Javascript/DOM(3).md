@@ -120,12 +120,12 @@ console.groupEnd();
         //속성값 유무
         t.hasAttribute('title')
     <script>       
-    ```
+        ```
     
     
    **속성과 프로퍼티**
    
-   ```javascript
+   ```html
     <p id ="target">
         hi
         </p>
@@ -139,4 +139,6 @@ console.groupEnd();
         target.className = 'important';
         </script>
     ```
+   
+    
     속성방식과 프로퍼티방식은 이름이 다른 경우나 (class /className) 값이 다른 경우가 있으니 유의!
