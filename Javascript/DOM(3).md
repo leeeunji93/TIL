@@ -99,7 +99,8 @@ console.groupEnd();
 ---
 ### 3.속성 API:태그의 이름만으로 정보가 부족할 때<br> id href와 같은 속성(attribute)을 통해서 부가 정보를 제시<br>
      
-     ```javascript
+     ```html
+     <body>
       <a id="target" href="제어대상을찾기(1).html">제어 대상</a>
     <script>
         // 속성값 가져오기
@@ -119,7 +120,8 @@ console.groupEnd();
 
         //속성값 유무
         t.hasAttribute('title')
-    </script>       
+    </script>  
+    <body>
     ```
     
     
