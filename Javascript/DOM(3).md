@@ -60,7 +60,7 @@ var active = document.getElementById('active')
 </script>
 ```
 ---
-### 2.조회 API:조회 대상을 제한하는 방법에 대하여
+### 2.조회 API:#### 조회 대상을 제한하는 방법에 대하여
 document.getElmentsBy*와 Element.getElmentsBy*차이 <br>
 문서 전체의 내용 중에서 찾게 되고 , 찾은 엘리먼트의 하위 엘리먼트만 찾게 됨. 아래 예시 ㄱ
 
@@ -97,7 +97,7 @@ console.groupEnd();
 </script>
  ```
 ---
-### 3.속성 API:태그의 이름(<a>)만으로 정보가 부족할 때<br>, id href와 같은 속성(attribute)을 통해서 부가 정보를 제시<br>
+### 3.속성 API: #### 태그의 이름(<a>)만으로 정보가 부족할 때<br> id href와 같은 속성(attribute)을 통해서 부가 정보를 제시<br>
    
    ```html
      <a id="target" href="제어대상을찾기(1).html">제어 대상</a>
@@ -119,8 +119,7 @@ console.groupEnd();
 
         //속성값 유무
         t.hasAttribute('title')
-    <script> 
-             
+    <script>       
     ```
     
     
@@ -140,4 +139,4 @@ console.groupEnd();
         target.className = 'important';
         </script>
     ```
- 속성방식과 프로퍼티방식은 이름이 다른 경우나 (class /className) 값이 다른 경우가 있으니 유의!
+    속성방식과 프로퍼티방식은 이름이 다른 경우나 (class /className) 값이 다른 경우가 있으니 유의!
