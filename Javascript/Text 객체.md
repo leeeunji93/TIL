@@ -1,5 +1,5 @@
 ### Text 객체
-> DOM에선 공백조차도 값
+: DOM에선 공백조차도 값<br>
 (1).<p id="target1"><span>hi</span></p> <br>
 (2).<p id=:target2"><br>
 <span>hi</span>
