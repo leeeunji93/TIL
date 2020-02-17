@@ -19,7 +19,7 @@ textElement.nextSibling.firstChild : hi <br>
 - `insertData()`
 - `replaceData()`
 - `substringData()`
->>> 이 부분은 실제 사용할 때 다시 보는 것이 중요할듯? <br>
+<br> 이 부분은 실제 사용할 때 다시 보는 것이 중요할듯? <br>
 [참조] : (https://programmer-seva.tistory.com/59)
 
 ---
