@@ -33,7 +33,7 @@ apple,kiwi
 ```
 > 공통점: 두번째 매개변수 생략하면 끝 값까지 가지고 옴
  차이점: <br>
-- substring(),slice() 차이점:  slice()만 - 사용 가능 
-- substr(),slice() 차이점: 두번째 파라미터값이 문자열 길이냐 아니야 차이
-
+> substring(),slice() 차이점:  slice()만 - 사용 가능 
+> substr(),slice() 차이점: 두번째 파라미터값이 문자열 길이냐 아니야 차이 <br>
+[참조]: (https://aljjabaegi.tistory.com/127)
 
