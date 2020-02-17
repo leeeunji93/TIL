@@ -22,7 +22,7 @@ aler(2);
 if(prompt(‘id’)===‘zoe’){
 alert(‘welcom’);
 }else{
-aler(‘fail’);
+alert(‘fail’);
 }
 }
 ```
