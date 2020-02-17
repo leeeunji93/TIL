@@ -24,7 +24,7 @@ textElement.nextSibling.firstChild : hi <br>
 
 ---
     1.엘리먼트의 크기와 위치 알아내기 <br>
-- t.getBoundingClientRect(); : 엘리먼트 크기 위치 알아내기 <br>
+`t.getBoundingClientRect();`
 ###### width값은 content, padding, border 포함한 크기임.magin 포함 x!!
 ###### t 말고 중첩된 다른 엘리먼트가 있더라도 상관 안하고 측정
 - offsetParent : 측정 기준이 되는 엘리먼트가 무엇이냐(항상 body가 기준은 아닌거임)
@@ -32,8 +32,8 @@ textElement.nextSibling.firstChild : hi <br>
 - ClientWidth / ClientHeight :테두리를 제외한 엘리먼트의 크기를 알고 싶다면<br>
 [그림 참조] :(https://opentutorials.org/course/1375/7112)<br>
 2.뷰포트<br>
-- `window.pageYOffset` : 스크롤한 만큼 정도..<br>
+`window.pageYOffset` : 스크롤한 만큼 정도..<br>
 3.스크롤<br>
-- `scrollTo`<br>
+`scrollTo`<br>
 4.스크린의 크기<br>
-- window.inner*은 뷰포트의 크기를 나타내고, screen.*은 사용자 스크린의 크기를 나타낸다.<br>
+window.inner*은 뷰포트의 크기를 나타내고, screen.*은 사용자 스크린의 크기를 나타낸다.<br>
