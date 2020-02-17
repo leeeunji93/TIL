@@ -1,5 +1,6 @@
 ### Text 객체
-: DOM에선 공백조차도 값<br>
+: DOM에선 공백조차도 값
+```html
 (1).<p id="target1"><span>hi</span></p> <br>
 (2).<p id=:target2"><br>
 <span>hi</span>
@@ -7,6 +8,7 @@
 p.firstchild.firstChild : hi <br>
 (2)값:p.firstChild : textElement
 textElement.nextSibling.firstChild : hi <br>
+  ```
 
 #### 1.값 API : 값을 가져오는
 - `nodeValue`
