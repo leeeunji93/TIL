@@ -30,10 +30,10 @@ textElement.nextSibling.firstChild : hi <br>
 - offsetParent : 측정 기준이 되는 엘리먼트가 무엇이냐(항상 body가 기준은 아닌거임)
 ###### 부모 중 CSS position의 값이 static인 td, th, table 엘리먼트가 있다면 이 엘리먼트가 offsetParent가 된다
 - ClientWidth / ClientHeight :테두리를 제외한 엘리먼트의 크기를 알고 싶다면<br>
-[그림 참조] :(https://opentutorials.org/course/1375/7112)<br>
+[그림 참조] :(https://opentutorials.org/course/1375/7112)
 2.뷰포트<br>
-- `window.pageYOffset` : 스크롤한 만큼 정도..<br>
+- `window.pageYOffset` : 스크롤한 만큼 정도..
 3.스크롤<br>
-- `scrollTo`<br>
+- `scrollTo`
 4.스크린의 크기<br>
 - window.inner*은 뷰포트의 크기를 나타내고, screen.*은 사용자 스크린의 크기를 나타낸다.<br>
