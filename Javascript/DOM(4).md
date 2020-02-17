@@ -91,10 +91,10 @@ function callAppendChild() {
 ### 2-3.문자열로 노드 제어 : 노드 변경 API 보다 간편, 편리
 - `innerHTML` :엘리먼트의 하위 엘리먼트를 보여준다
     + 엘리먼트를 담은 변수.innerHTML ="바꿀 내용";
-- `outerHTML` :자기 자신을 포함해서 하위 엘리먼트까지 보여준다
-**값을 읽을때는 HTML 코드를 포함해서 문자열을 리턴, 값 변경시 HTML 코드 빼고 추가**
-- `innerText`, `outerText`
-**값을 읽을때는 HTML 코드를 제외하고 문자열을 리턴, 값 변경시 HTML 코드 포함**
-- `insertAdjacentHTML()` :정교한 추가를 원할 때 사용
+- `outerHTML` :자기 자신을 포함해서 하위 엘리먼트까지 보여준다<br>
+##### **값을 읽을때는 HTML 코드를 포함해서 문자열을 리턴, 값 변경시 HTML 코드 빼고 추가**
+- `innerText`, `outerText`<br>
+##### **값을 읽을때는 HTML 코드를 제외하고 문자열을 리턴, 값 변경시 HTML 코드 포함**
+- `insertAdjacentHTML()` :정교한 추가를 원할 때 사용<br>
 참조 : (https://opentutorials.org/course/1375/6738)
     
