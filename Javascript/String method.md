@@ -1,4 +1,4 @@
-#### 문자열 자르는 메소드 
+### 문자열 자르기 관련 메소드 
 **첫번째 위치값은 이상! 마지막 위치값은 미만! 이라고 생각하기**
 
 -  `string.substr(start.length)`
@@ -24,8 +24,8 @@ var str ="apple,kiwi,pie";
 console.log(str.slice(5.13));
 ,kiwi,pie
 ```
-
-//배열에서도 가능
++ 배열에서도 가능
+```javascript
 var str =new Array(”apple”,”kiwi”,”pie”,”popcorn”);
 console.log(str.slice(0.2));
 apple,kiwi
