@@ -11,6 +11,7 @@ console.log(`답은${str.substr(1,4)}`);
 ```
 
 - `string.substring(start,end) `
+
 ```javascript
 var str = ’123456’;
 console.log(`답은${str.substring(1,4)}`);
@@ -19,12 +20,12 @@ console.log(`답은${str.substring(1,4)}`);
 
 - `string.slice(start,end) `:
 	+ 뒤에서 검색하면 - 이용
+	+ 배열에서도 가능
 ```javascript
 var str ="apple,kiwi,pie";
-console.log(str.slice(5.13));
-,kiwi,pie
-```
-+ 배열에서도 가능
+console.log(str.slice(-5.-9));
+kiwi
+//배열
 ```javascript
 var str =new Array(”apple”,”kiwi”,”pie”,”popcorn”);
 console.log(str.slice(0.2));
