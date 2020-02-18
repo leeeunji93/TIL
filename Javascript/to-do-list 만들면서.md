@@ -30,7 +30,7 @@ function paintToDo(text) {
 }
 ```
 
-- foreach문 : foreach 반복문은 Array 객체에서만 사용 가능한 메쏘드.배열의 요소들을 반복하여 작업을 수행한다.
+- `foreach`문 : foreach 반복문은 Array 객체에서만 사용 가능한 메쏘드.배열의 요소들을 반복하여 작업을 수행한다.
 ```javascript
 const TODOS_LS = "toDos";
 function loadToDos() {
@@ -43,7 +43,7 @@ function loadToDos() {
     }
 }
 ```
-- arr.filter(callback(element))
+- `arr.filter(callback(element))`
 filter 메쏘드는 콜백함수를 인자로 받고, 콜백함수 인자로 arr의 원소를 받음<br>
 콜백함수를 통해 원소를 하나 하나 검사한다.만약 배열 원소가 5개라면 5번 검사!<br>
 
