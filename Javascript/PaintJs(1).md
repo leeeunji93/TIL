@@ -1,7 +1,7 @@
 ### button 생성
 1.전송 목적
-- <input type="submit" value="클릭"> <br>
-          = <button type="submit"> 클릭 </button>
+- <input type="submit" value="클릭"><br>
+          = <button type="submit">클릭</button>
           
 -  <input type="button"<br>
           value="클릭"<br>
