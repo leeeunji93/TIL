@@ -1,4 +1,4 @@
-button 생성
+### button 생성
 1.전송 목적
 - `<input type="submit" value="클릭">` =`<button type="submit">`클릭`</button>`
 - `<input type="button"
