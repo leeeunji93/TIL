@@ -21,3 +21,10 @@
  - rgba(적색,녹색,청색,투명도)
  - rgb(0,255,0); opacity:0.5;
  차이점:opacity 속성은 투명도 지정했을 때 모든 자식 요소에 상속, rgba 괜춘
+
+
+## js
+- array.from 메소드는 object로부터 array를 만듬<br>
+```javascript
+console.log(Array.from(colors));
+```
