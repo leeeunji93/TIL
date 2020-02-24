@@ -28,3 +28,17 @@
 ```javascript
 console.log(Array.from(colors));
 ```
+
+- clientX,Y 스크린 크기
+- offsetX,Y 캔버스 내 좌표 크기
+
+- 마우스 이벤트
+    + `mousemove` : 마우스가 엘리먼트에서 움직일때
+    + `mousedown` : 마우스를 누르는 그 순간! (click과는 다르게 press하는 순간입니다)
+    + `mouseup` : down과 반대로 마우스를 누르고 있다가 손가락을 떼는 그 순간!
+
+[출처] : (https://itpangpang.xyz/297 [ITPangPang])
+
+- canvas
+html요소인데 context(요소 안에서 우리가 픽셀에 접근할 수 있는 방법) 가짐 <br>
+const ctx = canvas.getContext('2d') 여기서 getContext 처럼 다양한 거 가
