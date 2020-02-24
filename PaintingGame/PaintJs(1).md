@@ -39,6 +39,7 @@ console.log(Array.from(colors));
 
 [출처] : (https://itpangpang.xyz/297 [ITPangPang])
 
+
 - canvas
 html요소인데 context(요소 안에서 우리가 픽셀에 접근할 수 있는 방법) 가짐 <br>
 const ctx = canvas.getContext('2d') 여기서 getContext 처럼 다양한 거 가
