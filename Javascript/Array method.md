@@ -1,5 +1,21 @@
 
-### 배열.메소드 [참조] : (https://bblog.tistory.com/300)
+#### Array.메소드 [참조] : (https://bblog.tistory.com/300)
+
+
+- forEach문 :오로지 배열만 반복 가능한 메소드. foreach 구문의 인자로 callback 함수를 등록. 여기선 n! <br> 
+
+```javascript
+var arr = [3, 9, 4, 2, 7, 6];
+arr.forEach((n)=> {
+        console.log(n);
+}); //3,9,4,2,7,6
+```
+
+- map
+
+- filter
+
+---
 
 #### for문
 
@@ -17,7 +33,7 @@
 */
 ```
 
-- for in문<br>
+- for in문 : 오브젝트에 있는 키를 순회하는데 이용하는 반복문.확장 속성까지 순회하니까 주의! <br>
 ```javascript
 var amo ={
 name:'은지',
@@ -28,18 +44,8 @@ for(var amofilm in amo){
 console.log(amofilm+":"+amo[amofilm]);}
 ```
 
--forEach문<br>
+- for of문 : Symbol.iterator 가진 객체 반복. <br>
 ```javascript
-var arr = [3, 9, 4, 2, 7, 6];
-arr.forEach((n)=> {
-    if (n % 2 == 0) {
-        console.log(n);
-    }
-});
-```
----
-
-#### Array 메소드는 for문을 대체 가능
-- .map
-- .filter
-
+var a =["mon","tue","wen"];
+for(var aa of a){
+console.log(aa)}; //mon tue wen 
