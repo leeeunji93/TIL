@@ -1,0 +1,49 @@
+### 강의:input
+```javascript
+import React, {Component} from 'react';
+
+class Test extends Component {
+    state = {
+        name: '',
+        phone: '',
+    }
+    handleChange = (e) => {
+        this.setState({
+            [e.target.name]: e.target.value
+        });
+    }
+
+    render() {
+
+        return (
+            <form>
+                <input
+                    name="name"
+                    placeholder="이름"
+                    onChange={this.handleChange}
+                    value={this.state.name}
+                />
+                <input
+                    name="phone"
+                    placeholder="전화번호"
+                    onChange={this.handleChange}
+                    value={this.state.phone}
+                />
+                <div>
+                    {this.state.name} {this.state.phone}
+                </div>
+            </form>
+        )
+    }
+}
+
+export default Test;
+```
+#### input이 여러개면 state값을 어떻게 관리 해야하나?
+1.input 관리 위해서는 name값 설정
+2.e.target = input값
+name:e.target.value 를[e.target.name]:e.target.value 로 설정해야 여러 인풋관리 가능!
+(아직 정리중)
+---
+
+###
