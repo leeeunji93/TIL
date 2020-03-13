@@ -1,26 +1,28 @@
 import React, {Component} from 'react';
 
 class PhoneForm extends Component {
+
+    input = React.createRef();
+
     state = {
         name:'',
         phone:'',
-
     }
 
-    handleChange = (e) =>{
+    handleChange = (e) => {
         this.setState({
-            [e.target.name]:e.target.value
-        })
+            [e.target.name] : e.target.value
+        });
     }
-    /* 4번  */
+
     handleSubmit = (e) => {
         e.preventDefault();
-        /* 5번 온크리에이트 값 호출   */
         this.props.onCreate(this.state);
         this.setState({
             name:'',
             phone:'',
-        })
+        });
+        this.input.current.focus();
     }
 
     render() {
@@ -31,7 +33,7 @@ class PhoneForm extends Component {
                     placeholder="이름"
                     onChange={this.handleChange}
                     value={this.state.name}
-
+                    ref={this.input}
                 />
                 <input
                     name="phone"
@@ -39,7 +41,6 @@ class PhoneForm extends Component {
                     onChange={this.handleChange}
                     value={this.state.phone}
                 />
-                {/*3번 버튼 생 */}
                 <button type="submit">등록</button>
             </form>
         );
