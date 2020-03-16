@@ -69,7 +69,7 @@ class App extends Component {
      });
     };
 
-    <!-- state 설정할 때 리액트에서 외부의 상태에 의존하지 않은 방법은!
+     //state 설정할 때 리액트에서 외부의 상태에 의존하지 않은 방법은!
      add = () => {
           this.setState(current => ({
             count: current.count +1
@@ -82,7 +82,7 @@ class App extends Component {
          }));
         };
 
-     -->
+     
 
 
     render() {
