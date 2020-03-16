@@ -177,3 +177,78 @@ getMovies = async () => {
 
   }
 ```
+
+
+
+#### 여기까지 흐름 정리 
+```javascript
+
+    // 1번
+
+class App extends React.Component {
+  state = {
+    isLoading: true,
+    movies: []
+  };
+
+  componentDidMount() {
+     const movies = axios.get(
+            "https://yts-proxy.now.sh/list_movies.json?sort_by=rating"
+     );
+  }
+
+    // 2번 (axios를 좀 기다리라고 명령 해야함)
+
+  class App extends React.Component {
+    state = {
+      isLoading: true,
+      movies: []
+    };
+    getMovies = async() => {
+    const movies =await axios.get(
+                "https://yts-proxy.now.sh/list_movies.json?sort_by=rating"});
+
+        componentDidMount() {
+            this.getMovies();
+        }
+
+ // 여기까지 정리: isLoading: true, 로딩이 출력, 이 어플리케이션이 마운트 된 후, getMovies 호출,
+ 여기서 가져온 데이터는 존나 많은데 이 중 movie의 데이터만 필요해 우린! 그게 다음 과정
+
+ // 3번 우리가 원하는 데이터만 가져와보자
+
+  class App extends React.Component {
+    state = {
+      isLoading: true,
+      movies: []
+    };
+    getMovies = async() => {
+    const {
+        data:{
+            data:{movies}
+        }
+     } =await axios.get()"https://yts-proxy.now.sh/list_movies.json?sort_by=rating");
+       console.log(movies);
+     };
+
+     componentDidMount() {
+         this.getMovies();
+     }
+
+    // 4 movies 배열을 state에 넣어주자
+
+  class App extends React.Component {
+    state = {
+      isLoading: true,
+      movies: []
+    };
+    getMovies = async() => {
+    const movies =await axios.get(
+                "https://yts-proxy.now.sh/list_movies.json?sort_by=rating"});
+                    //movies:movies
+                this.setState({movies,isLoading:false})
+
+        componentDidMount() {
+            this.getMovies();
+        }
+        ```
