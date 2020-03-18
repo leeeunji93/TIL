@@ -1,72 +1,62 @@
-import React, {Component} from 'react';
+import React from "react";
 import axios from "axios";
 import Movie from "./Movie";
 
 
-const todayDate = () => {
-  const getDate = new Date();
-  var year = getDate.getFullYear();
-  var month = getDate.getMonth() + 1;
-  var day = getDate.getDate() - 1;
-
-  if (month < 10) {
-  month = `0${month}`
-
-    //`${0}month`; 븅신..? 변수에 들가야함
-  }
-
-  if (day < 10) {
-    // day = `${0}day`;
-    day = `0${day}`
-  }
-  return year + "" + month + "" +day;
-}
-
-const key = "721875747d75a78966dfe9d1326cacfd";
-
-
-class App extends Component {
+class App extends React.Component {
   state = {
     isLoading: true,
-      movies: []
+    movies: []
   };
-
-
   getMovies = async () => {
-    const url = `http://www.kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json?sort_by=rating&key=${key}&targetDt=${todayDate()}`;
-
-    const result =  await axios.get(url);
-    const movies = result.data.boxOfficeResult.dailyBoxOfficeList;
-    this.setState({
-      movies,isLoading:false
-    });
+    const {
+      data: {
+        data: { movies }
+      }
+    } = await axios.get(
+        "https://yts-proxy.now.sh/list_movies.json?sort_by=rating"
+    );
+    this.setState({ movies, isLoading: false });
   };
-
   componentDidMount() {
-   this.getMovies();
+    this.getMovies();
   }
-
-
   render() {
-      const {isLoading,movies} = this.state;
-        return(
-         <div>
-          {isLoading ?
-              "Loading..."
-              : movies.map(movie => (
-                  <Movie
-                      key = {movie.id}
-                      rank = {movie.rank}
-                      movieNm = {movie.movieNm}
-                      salesAmt = {movie.audiAcc}
-                  />
-                  )
-              )
-          }
-         </div>
-      );
-    }
+    const { isLoading, movies } = this.state;
+    return (
+        <section className="container">
+          {isLoading ? (
+              <div className="loader">
+                <span className="loader__text">Loading...</span>
+              </div>
+          ) : (
+              <div className="movies">
+                {movies.map(movieDataOne => (
+                    <Movie
+                        key={movieDataOne.id}
+                        myMovieData={movieDataOne}
+                    />
+                ))}
+              </div>
+          )}
+        </section>
+    );
+  }
 }
 
-
 export default App;
+
+/*<div class="movies">
+                {movies.map(movie => (
+                    <Movie
+                        key={movie.id}
+                        id={movie.id}
+                        year={movie.year}
+                        title={movie.title}
+                        summary={movie.summary}
+                        poster={movie.medium_cover_image}
+                        genres={movie.genres}
+
+))}
+</div>
+ */

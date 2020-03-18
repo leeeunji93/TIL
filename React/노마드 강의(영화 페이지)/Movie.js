@@ -1,29 +1,25 @@
-import React, { Component } from "react";
-import PropTypes from "prop-types";
+import React from "react";
 
+/** 첫번째 방법 */
 
-function Movie({ rank, movieNm, audiAcc }) {
+const Movie = ({myMovieData}) => {
+    console.log(myMovieData)
+    const {year, title, summary, medium_cover_image, genres} = myMovieData
+    const limitedGenres = genres.slice(0,3)
     return (
-        <div className="Movie">
-            <h1>
-                {rank}위:{movieNm}
-            </h1>
-            <h3>
-                {audiAcc}
-            </h3>
+        <div className="movie">
+            <img src={medium_cover_image} alt={title} title={title}/>
+            <div className="movie_data">
+                <h1 className="movie_title"><span>{title}</span> <span>{year}</span></h1>
+                <ul className="movie_genre">
+                    {limitedGenres.map((genre, index) => (
+                        <li key={index}>{genre}</li>
+                    ))}
+                </ul>
+                <p className="movie_summary">{summary.slice(0, 180)}…</p>
+            </div>
         </div>
-    );
+    )
 }
 
-Movie.propTypes = {
-    rank: PropTypes.string.isRequired,
-    movieNm: PropTypes.string.isRequired,
-    audiChange: PropTypes.string.isRequired,
-
-};
-
-export default Movie;
-
-
-
-
+export default Movie
