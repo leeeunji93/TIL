@@ -1,0 +1,81 @@
+## 1.0 Introduction to useState
+
+
+- 기존 컴포넌트 코드 
+
+```javascript
+import React, {Component} from 'react';
+
+class App extends Component {
+    state = {
+        count : 1,
+
+    }
+
+    plus = () => {
+        this.setState (current => ({
+                /* this.state.count +1 */
+           count : current.count  + 1
+        }));
+    }
+
+    minus = () => {
+        this.setState (current => ({
+            count : current.count - 1
+    }));
+    }
+
+
+    render() {
+        const {plus,minus} = this.state;
+        return (
+            <div>
+                <h1>hi, {this.state.count}</h1>
+                <button onClick={this.plus}>plus</button>
+                <button onClick={this.minus}>minus</button>
+            </div>
+        );
+    }
+}
+
+export default App;
+```
+
+- hook 사용시 코드 
+
+```javascript 
+
+const App = () =>{
+    //  setItem은 item을 변경해주는 값을 갖는다
+  const [item,setItem] = useState(1);
+  const incrementItem = () => setItem(item + 1);
+  const decrementItem = () => setItem(item - 1);
+  return(
+    <div className="App">
+      <h1>Hello {item}< /h1>
+      <h2>Start editing to see some magic</h2>
+      <button onClick={incrementItem}>incrementItem</button>
+      <button onClick={decrementItem}>decrementItem</button>
+      </div>
+  );
+}
+
+class AppUgly extends React.Component  {
+  state = {
+    item : 1
+  }
+  render(){
+    const {item} = this.state;
+    return(
+      <div className="App">
+        <h1>Hello {item}< /h1>
+        <h2>Start editing to see some magic</h2>
+        <button onClick={incrementItem}>incrementItem</button>
+        <button onClick={decrementItem}>decrementItem</button>
+        </div>
+    );
+    }
+}
+
+
+```
