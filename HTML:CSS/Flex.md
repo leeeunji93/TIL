@@ -1,12 +1,12 @@
 ### flex란 무엇인가
 
-####`flex-direction` : 기본은 `row`. 이때 가로는 `main axis` 세로는  `cross axis` 
+#### flex-direction : 기본은 row. 이때 가로는 `main axis` 세로는  `cross axis` (column 은 반대)
 - `row` 
 - `row-reverse` 
 - `column` 
 - `column-reverse`
 
-#### `justify-content` (`main axis` ) `align-items` (`cross axis` ) 
+#### justify-content (`main axis` ) align-items (`cross axis` ) 
 - `flex-start`
 - `center` 
 - `space-around`
@@ -20,9 +20,9 @@
 - `space-around`: 여러 줄들 주위에 동일한 간격을 둡니다.
 - `stretch`: 여러 줄들을 컨테이너에 맞도록 늘립니다.
 
-#### `flex-wrap: wrap` : `flex`는 너비가 바뀌어도 같은 열에 있도록 조정함(width 무의미). 이건 같은 크기를 가지도록 명령한다. (**width 크기 유지해!** )
+#### flex-wrap: wrap : flex는 너비가 바뀌어도 같은 열에 있도록 조정함(width 무의미). 이건 같은 크기를 가지도록 명령한다. (**width 크기 유지해!** )
 
-####`flex-grow` `flex-shrink` :child에게 줄 수 있는 property
+#### flex-grow flex-shrink :child에게 줄 수 있는 property
 - `flex-shrink` : 반응형때 어떤게 다른 것들보다 더 찌그러질지 정의해줍니다. flex-shrink: 2; 라면 2번이 다른 것보다 2배 줄어듭니다.
 - `flex-grow` : 남아있는 빈공간을 다 가짐으로서 크기가 커집니다.
 - `flex-basis` : element에게 처음 크기를 준다. 그리고 main-axis 영향을 줌 
