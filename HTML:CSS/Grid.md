@@ -6,6 +6,9 @@
 - `grid-template-areas` : 자식 클래스에서 지정해준 이름을 토대로 (`grid-area`) 레이아웃 설정한다.아니면    
 부모 태그에서 column row 만 지정해주고 자식 태그에서 `grid-column-start`: 1; `grid-column-end`:5; 이용해서 레이아웃 설정 가능합니다.
 이걸 더 간편하게 한다면 `grid-column:1/5`형식으로 해주세요. 시작과 끝난 알고 싶다면 1/-1 `span 2`; 이용하면 좀 더 쉬움
+#### grid-area 
+- 슬러쉬를 이용해 grid-row-start, grid-column-start, grid-row-end, grid-column-end순으로 하시
+이걸 더 간편하게 한다면 `grid-column:1/5`형식으로 해주세요. 시작과 끝난 알고 싶다면 1/-1 `span 2`; 이용하면 좀 더 쉬움
 **grid-template** : 위 정보를 아주 간단하게 정리해보자. 가독성이 좋음<br>
 ```css
 .grid {
