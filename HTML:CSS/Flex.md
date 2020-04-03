@@ -1,4 +1,5 @@
 ### flex란 무엇인가
+- `inline-flex` 
 
 #### flex-direction : 기본은 row. 이때 가로는 `main axis` 세로는  `cross axis` (column 은 반대)
 - `row` 
