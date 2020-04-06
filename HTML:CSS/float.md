@@ -8,7 +8,6 @@ width height margin 이런거 다쓸 수 있음.
 반면 선은 흐름에 맞춰서 가는거임. 가로 배치가 쉽긴해 이 흐름을 막는 애들 극혐 그래서 
 with height padaaing-top/bottom border-top/bottom margin-top/button 쓰기 불가능 
 
-`inline-block`  기본적으로 인라인처럼 흐르지만 블록처럼 영역도 잡아줌
 ---
 
 block의 가로 배치가 어렵잖아? 이걸 쉽게 해주는게 `Float` 
@@ -42,6 +41,9 @@ float 은 자식을 찾지 못한다.
   </body>
 </html>
 ```
+
+
+```css
 * {
   box-sizing: border-box;
   margin: 0;
@@ -106,9 +108,6 @@ p {
 .card-content{
   float: left;
 }
-
-
-```css
 
 ```
 
